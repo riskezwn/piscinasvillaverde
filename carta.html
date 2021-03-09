@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/carta.css">
+    <title>Carta</title>
+</head>
+<body>
+
+    <nav>
+        <a class="boton" href="index.html" onclick="prueba()">
+            <span class="material-icons">arrow_back</span>
+            <span>Atrás</span>
+        </a>
+    </nav>
+
+    <main> 
+
+    <section name="raciones" class="raciones">
+        <div class="categoria" onclick="showOrHide(1)">
+            <img src="images/patatas.png" alt="">
+            <h2>raciones</h2>
+            <span class="material-icons" id="arrow_1">arrow_drop_down</span>
+        </div>
+        <div class="block_1" id="block_1">
+            <div class="element">
+                <div class="txt">
+                    <h3>Sepia a la plancha</h3>
+                </div>
+                <div class="precio">10</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>rabas de santander</h3>
+                </div>
+                <div class="precio">8</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>fingers de pollo</h3>
+                    <p>con salsa de miel y mostaza</p>
+                </div>
+                <div class="precio">7</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>torreznos</h3>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>patatas fritas</h3>
+                </div>
+                <div class="precio">3.5</div>
+            </div>
+        </div>
+    </section>
+
+    <section name="sandwiches" class="sandwiches">
+        <div class="categoria" onclick="showOrHide(3)">
+            <img src="images/sandwich.png" alt="">
+            <h2>sandwiches</h2>
+            <span class="material-icons" id="arrow_3">arrow_drop_down</span>
+        </div>
+        <div class="block_3" id="block_3">
+            <div class="element">
+                <div class="txt">
+                    <h3>Manhattan</h3>
+                    <p>Lomo, pimiento verde, bacon, tomate, lechuga y mayonesa</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Especial</h3>
+                    <p>Lomo, huevo frito, jamón york, queso, tomate y mayonesa</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Imperial</h3>
+                    <p>Pechuga de pollo, tomate, lechuga, bacon y mayonesa</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Texas</h3>
+                    <p>Hamburgesa, huevo frito, bacon, lechuga, tomate y mayonesa</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Boston</h3>
+                    <p>Pechuga de pollo, cebolla caramelizada, bacon, queso, lechuga y mayonesa</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>California</h3>
+                    <p>Ternera, huevo frito, bacon, lechuga, tomate y mayonesa</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Dallas</h3>
+                    <p>Ternera, cebolla caramelizada, bacon, queso, lechuga y mayonesa</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Dakota</h3>
+                    <p>Frankfurt, queso, bacon, pimiento verde y mayonesa</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Americano</h3>
+                    <p>Jamón york, queso, bacon, lechuga, tomate y mayonesa</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Vegetal</h3>
+                    <p>Lechuga, tomate, huevo cocido, espárragos, pepinillo y mayonesa</p>
+                </div>
+                <div class="precio">4</div>
+            </div>
+        </div>
+    </section>
+
+    <section name="burgers" class="burgers">
+        <div class="categoria" onclick="showOrHide(4)">
+            <img src="images/burger.png" alt="">
+            <h2>burgers</h2>
+            <span class="material-icons" id="arrow_4">arrow_drop_down</span>
+        </div>
+        <div class="block_4" id="block_4">
+            <div class="element">
+                <div class="txt">
+                    <h3>Bacon y queso</h3>
+                    <p>Con lechuga y tomate</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Completa</h3>
+                    <p>Con bacon y queso, lechuga, tomate, cebolla caramelizada y huevo frito</p>
+                </div>
+                <div class="precio">5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Queso de Cabra</h3>
+                    <p>Con cebolla caramelizada, bacon y lechuga</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+        </div>
+    </section>
+
+    <section name="bocadillos" class="bocadillos">
+        <div class="categoria" onclick="showOrHide(5)">
+            <img src="images/bocadillo.png" alt="">
+            <h2>bocadillos</h2>
+            <span class="material-icons" id="arrow_5">arrow_drop_down</span>
+        </div>
+        <div class="block_5" id="block_5">
+            <div class="element">
+                <div class="txt">
+                    <h3>Sepia</h3>
+                    <p>Con Ali-oli</p>
+                </div>
+                <div class="precio">6</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Lomo con bacon</h3>
+                    <p>Y tomate rallado</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Bacon con queso</h3>
+                    <p>Y tomate rallado</p>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Pechuga con queso</h3>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+            <hr>
+            <div class="element">
+                <div class="txt">
+                    <h3>Ternera con roquefort</h3>
+                </div>
+                <div class="precio">4.5</div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+
+<script src="https://kit.fontawesome.com/790908a15c.js" crossorigin="anonymous"></script>
+<script src="jquery/carta.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(
+    140deg,
+    rgb(111, 185, 134) 0%,
+    rgba(28, 138, 131, 1) 42%,
+    rgba(73, 207, 235, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+/* --- --- NAV --- --- */
+nav .boton {
+  background-color: #fff;
+  width: auto;
+  height: 2.5em;
+  margin: 10px 0 0 10px;
+  border-radius: 100px;
+  display: inline-block;
+  padding: 0 25px;
+  text-decoration: none;
+  color: #313131;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  justify-content: space-between;
+}
+nav .boton:hover {
+  background-image: linear-gradient(to right,#ff8a00,#da1b60);
+}
+
+nav .boton span:not(.material-icons) {
+  margin-left: 10px;
+}
+
+main hr {
+  border: 0.5px solid #f1f1f1;
+  width: 97%;
+  margin: auto;
+}
+
+/* --- --- CATEGORIA --- --- */
+main .categoria {
+  z-index: 2;
+  display: flex;
+  background-color: #fff;
+  margin: 10px 0 10px 0;
+  height: 2.5em;
+  transition: height 1s;
+}
+main .categoria:active {
+  height: 7em;
+}
+main .categoria img {
+  width: auto;
+  height: 100%;
+  padding: 0 20px;
+}
+main .categoria h2 {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  color: rgba(28, 138, 131, 1);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 0 auto;
+  padding: 0 10px 0 20px;
+  align-items: center;
+}
+
+main .categoria span {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  color: rgba(28, 138, 131, 1);
+  text-decoration: none;
+  padding: 10px 10px 10px 0;
+}
+
+/* --- --- ELEMENTO --- --- */
+main .block2 {
+  display: block;
+}
+
+main .element {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  min-height: 2.5em;
+}
+main .element .txt {
+  display: flex;
+  flex-direction: column;
+}
+main .element .txt h3 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+main .element .txt p {
+  max-width: 100%;
+  margin-right: 20px;
+}
+main .element .precio {
+  display: flex;
+  margin: 0 0 0 auto;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+/*  RESPONSIVE
+   ========================================================================= 
+ Escritorios muy grandes
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+  .block {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+/* Tablets en horizonal y escritorios normales
+      ------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 26px;
+  }
+  .block {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+/* Móviles en horizontal o tablets en vertical
+      ------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  body {
+    font-size: 20px;
+  }
+}
+/* Móviles en vertical
+      ------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+}
