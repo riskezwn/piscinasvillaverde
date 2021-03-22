@@ -168,7 +168,7 @@ main .instalaciones .sliderInstalaciones-container .prev, .next {
 
 main .instalaciones .fa-swimmer {
     display: block;
-    color:rgba(36, 36, 36, 1);
+    color:rgb(243, 243, 243);
     text-align: center;
     font-size: 3em;
     padding: 10px;
