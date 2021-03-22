@@ -37,9 +37,6 @@ nav .boton {
   border: none;
   justify-content: space-between;
 }
-nav .boton:hover {
-  background-image: linear-gradient(to right,#ff8a00,#da1b60);
-}
 
 nav .boton span:not(.material-icons) {
   margin-left: 10px;

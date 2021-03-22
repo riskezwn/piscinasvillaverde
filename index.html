@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <title>Piscinas Municipales de Villaverde de Íscar</title>
 </head>
 <body>
 
     <header id="header">
-        <nav class="nav-bar-reduced">
+        <nav class="nav-bar-reduced" id="nav-bar-reduced">
             <a href="#home" class="active">
                 <img src="images/favicon.png" alt="">
             </a>
             <div id="links">
-                <a href="#news" onclick="showHideMenu()"><i class="fas fa-swimmer"></i>Instalaciones</a>
-                <a href="#contact"><i class="fas fa-utensils"></i>Bar</a>
-                <a href="#about">About</a>
+                <a href="#instalaciones" onclick="showHideMenu()"><i class="fas fa-swimmer"></i>Instalaciones</a>
+                <a href="#bar" onclick="showHideMenu()"><i class="fas fa-utensils"></i>Bar</a>
+                <a href="#ubicacion" onclick="showHideMenu()"><i class="fas fa-map-marker-alt"></i>Dónde estamos</a>
+                <div class="nav_social"><a href="https://www.instagram.com/piscinasvillaverde/"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/profile.php?id=100057483819582"><i class="fab fa-facebook-square"></i></a></div>
               </div>
             <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
                 <i class="fas fa-bars"></i>
@@ -33,6 +34,7 @@
             <a name="home"></a>
             <div class="image">
                 <img src="images/imagen.JPG" alt="" id="inicio-img">
+                <h1></h1>
             </div>
             <div class="description-box">
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed libero magna. Mauris tincidunt elit felis. Phasellus rhoncus, urna nec suscipit mollis, felis erat consectetur lacus, nec euismod dolor tellus a augue. Sed ultrices non risus a blandit. Integer at ultricies orci. </p>
@@ -41,7 +43,7 @@
 
         
         <div class="instalaciones">
-            <a name="news"></a>
+            <a name="instalaciones"></a>
             <div class="sliderInstalaciones-container">
                 <div class="sliderInstalaciones fade">
                     <img src="images/instalaciones1.JPG" alt="" style="width: 100%;">
@@ -60,6 +62,27 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             
+            <i class="fas fa-swimmer"></i>
+
+            <div class="info-abonos">
+
+
+            </div>
+
+
+        </div>
+
+        <div class="bar">
+            <a name="bar"></a>
+            <div class="bar-buttons">
+                <a class="button" href="carta.html">
+                    <span>CARTA</span>
+                </a>
+                <a class="button" href="carta.html">
+                    <span>CARTA DE POSTRES</span>
+                </a>
+            </div>
+
         </div>
 
 

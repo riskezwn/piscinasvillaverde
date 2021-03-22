@@ -5,18 +5,22 @@
     box-sizing: border-box;
   }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;    
+}
 
 
 /* HEADER  */
 
 header .nav-bar-reduced {
     overflow: hidden;
+    width: 100%;
     background-color: rgba(36, 36, 36, 0.8);
     position: fixed;
     z-index: 3;
     top: 0px;
-    right: 0px;
-    left: 0px;   
+    transition: top 0.3s; 
 }
 
 header .nav-bar-reduced #links {
@@ -30,7 +34,7 @@ header .nav-bar-reduced .active img {
 
 header .nav-bar-reduced a {
     color: white;
-    padding: 14px 16px;
+    padding: 12px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
@@ -54,6 +58,13 @@ header .nav-bar-reduced a.icon {
     
 }
 
+header .nav-bar-reduced .nav_social {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(36, 36, 36, 0.9);
+
+}
+
  /* MAIN  */
 
  main .inicio {
@@ -64,11 +75,20 @@ header .nav-bar-reduced a.icon {
 
  }
 
- main .inicio img {
+ main .inicio .image {
+     position: relative;
+ }
+
+ main .inicio .image img {
      width: 100%;
      height: 60vh;
      object-fit: cover;
-     flex-grow: 2;
+ }
+
+ main .inicio .image h1 {
+     position: absolute;
+     bottom: 0;
+     left: 0;
  }
 
  main .inicio .description-box {
@@ -88,6 +108,7 @@ header .nav-bar-reduced a.icon {
  main .instalaciones {
     height: 100vh;
     background-color: #6FCF97;
+    position: relative;
  }
 
  main .instalaciones .sliderInstalaciones-container {
@@ -145,31 +166,79 @@ main .instalaciones .sliderInstalaciones-container .prev, .next {
     to{opacity:1}
    }
 
-.slide {
-    position: absolute;
-    left: -400px;
-    width: 400px;
-    height: 400px;
-    background: blue;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
-}
-
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-
-@keyframes slide {
-    100% { left: 0; }
+main .instalaciones .fa-swimmer {
+    display: block;
+    color:rgba(36, 36, 36, 1);
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
 }
 
 main .instalaciones .info-abonos {
     background-color: white;
     display: block;
     width: 90vw;
-    position: relative;
     height: 300px;
-    margin: 0 auto;
+    margin: 15px auto;
+    border-radius: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* MAIN bar */
+
+main .bar {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/bar_image2.JPG");
+    background-size:cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    position: relative;
+}
+
+main .bar:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+main .bar .bar-buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    left: 0;
+    right: 0;
+    bottom: 60%;
+    margin: auto;
+}
+
+main .bar .bar-buttons .button {
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgb(235, 233, 233);
+    border: 3px solid rgb(235, 233, 233);
+
+}
+
+main .bar .bar-buttons .button:hover {
+    background-color: rgb(235, 233, 233, 0);
+    color: rgb(235, 233, 233);
+    
+}
+
+main .bar .bar-buttons a span {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    
+
 }
