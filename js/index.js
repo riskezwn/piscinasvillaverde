@@ -55,3 +55,23 @@ function plusSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".splide", {
+    cover: true,
+    heightRatio: 0.3,
+    height: "500px",
+    autoplay: true,
+    type: "loop",
+    pagination: false,
+    padding: {
+      right: '5rem',
+      left : '5rem',
+    }
+  });
+  splide.on( 'autoplay:playing', function ( rate ) {
+    console.log( rate ); // 0-1
+  } );
+  
+  splide.mount();
+});
