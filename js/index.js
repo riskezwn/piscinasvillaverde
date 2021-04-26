@@ -64,10 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     type: "loop",
     pagination: false,
-    padding: {
-      right: '5rem',
-      left : '5rem',
-    }
   });
   splide.on( 'autoplay:playing', function ( rate ) {
     console.log( rate ); // 0-1
