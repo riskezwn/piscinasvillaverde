@@ -1,30 +1,9 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav-bar-reduced").style.top = "0";
-  } else {
-    document.getElementById("nav-bar-reduced").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-};
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
 
-function showHideMenu() {
-  var x = document.getElementById("links");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-function tapToHideMenu() {
-  var x = document.getElementById("links");
-  if (x.style.display === "block");
-  {
-    x.style.display = "none";
-  }
-}
+navBarToggle.addEventListener("click", function () {
+  mainNav.classList.toggle("active");
+});
 
 var slideIndex = 0;
 showSlides();
@@ -65,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "loop",
     pagination: false,
   });
-  splide.on( 'autoplay:playing', function ( rate ) {
-    console.log( rate ); // 0-1
-  } );
-  
+  splide.on("autoplay:playing", function (rate) {
+    // 0-1
+  });
+
   splide.mount();
 });

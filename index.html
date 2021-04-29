@@ -11,61 +11,52 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
-    <link rel="stylesheet" href="js/splide/dist/css/themes/splide-default.min.css">
+    <link
+      rel="stylesheet"
+      href="js/splide/dist/css/themes/splide-default.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Piscinas Municipales de Villaverde de Íscar</title>
   </head>
   <body>
     <header id="header">
-      <nav class="nav-bar-reduced" id="nav-bar-reduced">
-        <a href="#home" class="active">
-          <img src="images/favicon.png" alt="" />
-        </a>
-        <div id="links">
-          <a href="#instalaciones" onclick="showHideMenu()"
-            ><i class="fas fa-swimmer"></i>Instalaciones</a
-          >
-          <a href="#bar" onclick="showHideMenu()"
-            ><i class="fas fa-utensils"></i>Bar</a
-          >
-          <a href="#ubicacion" onclick="showHideMenu()"
-            ><i class="fas fa-map-marker-alt"></i>Dónde estamos</a
-          >
-          <div class="nav_social">
-            <a href="https://www.instagram.com/piscinasvillaverde/"
-              ><i class="fab fa-instagram"></i></a
-            ><a href="https://www.facebook.com/profile.php?id=100057483819582"
-              ><i class="fab fa-facebook-square"></i
-            ></a>
-          </div>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="showHideMenu()">
+      <nav class="navbar" id="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fas fa-bars"></i>
-        </a>
+        </span>
+        <a href="#" class="logo">logo</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#" class="nav-links">instalaciones</a>
+          </li>
+          <li>
+            <a href="#bar" class="nav-links">bar</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">dónde estamos</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">contacto</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main onclick="tapToHideMenu()">
       <div class="inicio">
         <a name="home"></a>
-        <div class="image">
-          <img src="images/imagen.JPG" alt="" id="inicio-img" />
-          <h1></h1>
-        </div>
-        <div class="description-box">
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed
-            libero magna. Mauris tincidunt elit felis. Phasellus rhoncus, urna
-            nec suscipit mollis, felis erat consectetur lacus, nec euismod dolor
-            tellus a augue. Sed ultrices non risus a blandit. Integer at
-            ultricies orci.
-          </p>
+        <div id="background-cover">
+          <div id="logo"><img src="/images/logo.png" alt="logo" /></div>
+          <div class="arrow-home">
+            <i class="fas fa-chevron-down"></i>
+          </div>
         </div>
       </div>
 
       <div class="instalaciones">
         <a name="instalaciones"></a>
         <div class="sliderInstalaciones-container">
-          <div class="sliderInstalaciones fade">
+          <div data-aos="fade-up-right" class="sliderInstalaciones fade">
             <img src="images/instalaciones1.JPG" alt="" style="width: 100%" />
           </div>
           <div class="sliderInstalaciones fade">
@@ -85,7 +76,7 @@
         <i class="fas fa-swimmer"></i>
       </div>
 
-      <div class="bar">
+      <div class="bar" data-aos="fade-right" data-aos-mirror="true">
         <a name="bar"></a>
         <div class="bar-buttons">
           <a class="button" href="carta.html">
@@ -115,12 +106,9 @@
           </ul>
         </div>
         <div class="splide__progress">
-          <div class="splide__progress__bar">
-          </div>
+          <div class="splide__progress__bar"></div>
         </div>
       </div>
-
-    
     </main>
 
     <script
@@ -129,5 +117,9 @@
     ></script>
     <script src="js/index.js"></script>
     <script src="js/splide/dist/js/splide.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800 });
+    </script>
   </body>
 </html>
