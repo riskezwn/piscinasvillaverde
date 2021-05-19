@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/header.css" />
     <link
       rel="stylesheet"
       href="js/splide/dist/css/themes/splide-default.min.css"
@@ -27,28 +28,31 @@
         <a href="#" class="logo">logo</a>
         <ul class="main-nav" id="js-menu">
           <li>
-            <a href="#" class="nav-links">instalaciones</a>
+            <a href="#home" class="nav-links">INICIO</a>
           </li>
           <li>
-            <a href="#bar" class="nav-links">bar</a>
+            <a href="#instalaciones" class="nav-links">INSTALACIONES</a>
           </li>
           <li>
-            <a href="#" class="nav-links">dónde estamos</a>
+            <a href="#bar" class="nav-links">BAR</a>
           </li>
           <li>
-            <a href="#" class="nav-links">contacto</a>
+            <a href="#" class="nav-links">DÓNDE ESTAMOS</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">CONTACTO</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main onclick="tapToHideMenu()">
+    <main>
       <div class="inicio">
         <a name="home"></a>
         <div id="background-cover">
           <div id="logo"><img src="/images/logo.png" alt="logo" /></div>
           <div class="arrow-home">
-            <i class="fas fa-chevron-down"></i>
+            <a href="#instalaciones"><i class="fas fa-chevron-down"></i></a>
           </div>
         </div>
       </div>
@@ -74,6 +78,9 @@
         </div>
 
         <i class="fas fa-swimmer"></i>
+        <div class="arrow-home">
+          <a href="#bar"><i class="fas fa-chevron-down"></i></a>
+        </div>
       </div>
 
       <div class="bar" data-aos="fade-right" data-aos-mirror="true">

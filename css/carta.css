@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  height: 100%;
   background: linear-gradient(
     140deg,
     rgb(111, 185, 134) 0%,
@@ -22,44 +21,20 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/* --- --- NAV --- --- */
-nav .boton {
-  background-color: #fff;
-  width: auto;
-  height: 2.5em;
-  margin: 10px 0 0 10px;
-  border-radius: 100px;
-  display: inline-block;
-  padding: 0 25px;
-  text-decoration: none;
-  color: #313131;
-  display: inline-flex;
-  align-items: center;
-  border: none;
-  justify-content: space-between;
-}
-
-nav .boton span:not(.material-icons) {
-  margin-left: 10px;
-}
-
-main hr {
-  border: 0.5px solid #f1f1f1;
-  width: 97%;
-  margin: auto;
-}
-
 /* --- --- CATEGORIA --- --- */
+main {
+  margin: 4em auto;
+  width: 90%;
+}
 main .categoria {
   z-index: 2;
   display: flex;
   background-color: #fff;
   margin: 10px 0 10px 0;
   height: 2.5em;
-  transition: height 1s;
 }
-main .categoria:active {
-  height: 7em;
+.categoria.active, .categoria:hover {
+  background-color: #ccc; 
 }
 main .categoria img {
   width: auto;
@@ -87,8 +62,8 @@ main .categoria span {
 }
 
 /* --- --- ELEMENTO --- --- */
-main .block2 {
-  display: block;
+main .block {
+  display: none;
 }
 
 main .element {

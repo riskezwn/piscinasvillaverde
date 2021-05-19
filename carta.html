@@ -12,24 +12,43 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/carta.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <title>Carta</title>
   </head>
   <body>
-    <nav>
-      <a class="boton" href="index.html" onclick="prueba()">
-        <span class="material-icons">arrow_back</span>
-        <span>Atrás</span>
-      </a>
-    </nav>
+    <header id="header">
+      <nav class="navbar" id="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">logo</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html#home" class="nav-links">INICIO</a>
+          </li>
+          <li>
+            <a href="index.html#instalaciones" class="nav-links">INSTALACIONES</a>
+          </li>
+          <li>
+            <a href="index.html#bar" class="nav-links">BAR</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">DÓNDE ESTAMOS</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-      <section name="raciones" class="raciones">
-        <div class="categoria" onclick="showOrHide(1)">
+      <section class="raciones">
+        <div class="categoria">
           <img src="images/patatas.png" alt="" />
           <h2>raciones</h2>
-          <span class="material-icons" id="arrow_1">arrow_drop_down</span>
         </div>
-        <div class="block_1" id="block_1">
+        <div class="block">
           <div class="element">
             <div class="txt">
               <h3>Sepia a la plancha</h3>
@@ -68,13 +87,13 @@
         </div>
       </section>
 
-      <section name="sandwiches" class="sandwiches">
-        <div class="categoria" onclick="showOrHide(3)">
+      <section class="sandwiches">
+        <div class="categoria">
           <img src="images/sandwich.png" alt="" />
           <h2>sandwiches</h2>
           <span class="material-icons" id="arrow_3">arrow_drop_down</span>
         </div>
-        <div class="block_3" id="block_3">
+        <div class="block">
           <div class="element">
             <div class="txt">
               <h3>Manhattan</h3>
@@ -164,13 +183,13 @@
         </div>
       </section>
 
-      <section name="burgers" class="burgers">
-        <div class="categoria" onclick="showOrHide(4)">
+      <section class="burgers">
+        <div class="categoria">
           <img src="images/burger.png" alt="" />
           <h2>burgers</h2>
           <span class="material-icons" id="arrow_4">arrow_drop_down</span>
         </div>
-        <div class="block_4" id="block_4">
+        <div class="block">
           <div class="element">
             <div class="txt">
               <h3>Bacon y queso</h3>
@@ -200,13 +219,13 @@
         </div>
       </section>
 
-      <section name="bocadillos" class="bocadillos">
-        <div class="categoria" onclick="showOrHide(5)">
+      <section class="bocadillos">
+        <div class="categoria">
           <img src="images/bocadillo.png" alt="" />
           <h2>bocadillos</h2>
           <span class="material-icons" id="arrow_5">arrow_drop_down</span>
         </div>
-        <div class="block_5" id="block_5">
+        <div class="block">
           <div class="element">
             <div class="txt">
               <h3>Sepia</h3>
