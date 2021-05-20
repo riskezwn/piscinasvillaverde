@@ -5,41 +5,23 @@ navBarToggle.addEventListener("click", function () {
   mainNav.classList.toggle("activeNav");
 });
 
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("sliderInstalaciones");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-80px";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 10000);
-}
-
-function plusSlides() {
-  var i;
-  var slides = document.getElementsByClassName("sliderInstalaciones");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
+  prevScrollpos = currentScrollPos;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".splide", {
     cover: true,
-    heightRatio: 0.3,
-    height: "500px",
+    focus: "center",
+    width: "auto",
+    heightRatio: 1,
     autoplay: true,
     type: "loop",
     pagination: false,
