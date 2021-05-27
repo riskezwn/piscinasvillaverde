@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap");
+
+:root {
+  --dark-gray: #121212;
+  --gray: #353535;
+  --pastel-green: #4faa75;
+  --pastel-darkgreen: #357951;
+  --break-white: #ebebeb;
+  --pastel-blue: #5c6bc0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +20,11 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    140deg,
-    rgb(111, 185, 134) 0%,
-    rgba(28, 138, 131, 1) 42%,
-    rgba(73, 207, 235, 1) 100%
-  );
+  background: var(--break-white);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
-  font-family: "Lato", sans-serif;
+  color: var(--gray);
+  font-family: "Quicksand", sans-serif;
 }
 
 /* --- --- CATEGORIA --- --- */
@@ -29,12 +35,13 @@ main {
 main .categoria {
   z-index: 2;
   display: flex;
-  background-color: #fff;
+  background-color: var(--pastel-green);
   margin: 10px 0 10px 0;
   height: 2.5em;
+  border-radius: 10px;
 }
 .categoria.active, .categoria:hover {
-  background-color: #ccc; 
+  background-color: var(--pastel-darkgreen); 
 }
 main .categoria img {
   width: auto;
@@ -43,23 +50,23 @@ main .categoria img {
 }
 main .categoria h2 {
   display: flex;
-  font-family: "Nunito", sans-serif;
-  color: rgba(28, 138, 131, 1);
+  font-family: "Quicksand", sans-serif;
+  color: var(--break-white);
   font-weight: 900;
   text-transform: uppercase;
   margin: 0 0 0 auto;
   padding: 0 10px 0 20px;
   align-items: center;
 }
-
-main .categoria span {
-  display: flex;
-  align-items: center;
-  font-size: 1.5em;
-  color: rgba(28, 138, 131, 1);
-  text-decoration: none;
-  padding: 10px 10px 10px 0;
+main .categoria h2::after {
+  margin-left: .5em;
+  content: "+";
 }
+main .categoria.active h2::after {
+  margin-left: .5em;
+  content: "-";
+}
+
 
 /* --- --- ELEMENTO --- --- */
 main .block {
@@ -69,7 +76,7 @@ main .block {
 main .element {
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 5px;
   align-items: center;
   min-height: 2.5em;
 }
@@ -82,6 +89,7 @@ main .element .txt h3 {
   text-transform: uppercase;
 }
 main .element .txt p {
+  font-family: sans-serif;
   max-width: 100%;
   margin-right: 20px;
 }
@@ -100,7 +108,7 @@ main .element .precio {
    ------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
   body {
-    font-size: 22px;
+    font-size: 18px;
   }
   .block {
     margin-left: 200px;
@@ -111,11 +119,10 @@ main .element .precio {
       ------------------------------------------------------------------------- */
 @media (min-width: 768px) and (max-width: 1199px) {
   body {
-    font-size: 26px;
+    font-size: 20px;
   }
   .block {
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 70%;
   }
 }
 /* Móviles en horizontal o tablets en vertical
