@@ -5,12 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&family=Josefin+Sans&display=swap"
       rel="stylesheet"
     />
-    <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link
       rel="stylesheet"
@@ -25,7 +103,7 @@
         <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fas fa-bars"></i>
         </span>
-        <a href="#" class="logo">logo</a>
+        <a href="#" class="logo">PISCINAS VILLAVERDE</a>
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="#home" class="nav-links">INICIO</a>
@@ -37,18 +115,17 @@
             <a href="#bar" class="nav-links">BAR</a>
           </li>
           <li>
-            <a href="#" class="nav-links">DÓNDE ESTAMOS</a>
+            <a href="#map_contact" class="nav-links">DÓNDE ESTAMOS</a>
           </li>
           <li>
-            <a href="#" class="nav-links">CONTACTO</a>
+            <a href="#map_contact" class="nav-links">CONTACTO Y RESERVAS</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <div class="inicio">
-        <a name="home"></a>
+      <div class="inicio" id="home">
         <div id="background-cover">
           <div id="logo"><img src="images/logo.png" alt="logo" /></div>
           <div class="arrow-home">
@@ -57,34 +134,39 @@
         </div>
       </div>
 
-      <div class="instalaciones">
-        <a name="instalaciones"></a>
-        <div class="sliderInstalaciones-container">
-          <div data-aos="fade-up-right" class="sliderInstalaciones fade">
-            <img src="images/instalaciones1.JPG" alt="" style="width: 100%" />
+      <div class="instalaciones" id="instalaciones">
+        <a></a>
+        <div class="boxInstal1">
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="images/instalaciones1.JPG" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="images/instalaciones2.JPG" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="images/instalaciones3.JPG" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="images/instalaciones4.JPG" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div class="splide__progress">
+              <div class="splide__progress__bar"></div>
+            </div>
           </div>
-          <div class="sliderInstalaciones fade">
-            <img src="images/instalaciones2.JPG" alt="" style="width: 100%" />
-          </div>
-          <div class="sliderInstalaciones fade">
-            <img src="images/instalaciones3.JPG" alt="" style="width: 100%" />
-          </div>
-          <div class="sliderInstalaciones fade">
-            <img src="images/instalaciones4.JPG" alt="" style="width: 100%" />
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
-        <i class="fas fa-swimmer"></i>
-        <div class="arrow-home">
-          <a href="#bar"><i class="fas fa-chevron-down"></i></a>
-        </div>
+        <div class="boxInstal2"><h2>NUE</h2></div>
+        <div class="boxInstal3">Elemento 3</div>
+        <div class="boxInstal4">Elemento 4</div>
       </div>
 
-      <div class="bar" data-aos="fade-right" data-aos-mirror="true">
-        <a name="bar"></a>
+      <div class="bar" id="bar" data-aos="fade-right" data-aos-mirror="true">
+        <h2>COMIDA & BEBIDA</h2>
+        <hr />
         <div class="bar-buttons">
           <a class="button" href="carta.html">
             <span>CARTA</span>
@@ -92,31 +174,124 @@
           <a class="button" href="carta.html">
             <span>CARTA DE POSTRES</span>
           </a>
+          <a class="button" href="carta.html">
+            <span>CARTA DE BEBIDA</span>
+          </a>
         </div>
       </div>
 
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <img src="images/instalaciones1.JPG" alt="" />
-            </li>
-            <li class="splide__slide">
-              <img src="images/instalaciones2.JPG" alt="" />
-            </li>
-            <li class="splide__slide">
-              <img src="images/instalaciones3.JPG" alt="" />
-            </li>
-            <li class="splide__slide">
-              <img src="images/instalaciones4.JPG" alt="" />
-            </li>
+      <div class="map_contact" id="map_contact">
+        <div class="boxMap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1260.0671399495297!2d-4.5281598010892266!3d41.30969861897147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd472e53b14cac29%3A0xf90405431cbaeec7!2sPiscinas%20Municipales%20de%20Villaverde%20de%20Iscar!5e0!3m2!1ses!2ses!4v1621853108381!5m2!1ses!2ses"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="boxSocialInfo">
+          <h4>
+            ¡Síguenos en nuestras redes sociales! Y no te olvides de dejar tu
+            opinión.
+          </h4>
+          <ul class="social_list">
+            <li class="social"><a href=""><i class="fab fa-tripadvisor"></i></a></li>
+            <li class="social"><a href=""><i class="fas fa-map-marked-alt"></i></a></li>
+            <li class="social"><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li class="social"><a href=""><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
-        <div class="splide__progress">
-          <div class="splide__progress__bar"></div>
+        <div class="boxContact">
+          <h2>RESERVAS</h2>
+          <hr />
+          <h4>Horario</h4>
+          <p>
+            De lunes a domingo, de 12h a 1h <br /><br />
+            <span>Horario de cocina:</span> <br /><br />
+            De Martes a Jueves... <br />
+            De Viernes a Domingo... <br />
+          </p>
+          <form action="">
+            <div class="form-group">
+              <label for="name">Nombre y apellidos</label><br />
+              <input class="input" type="text" name="name" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input class="input" type="tel" name="phone" id="phone" />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input class="input" type="email" name="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="personas">Personas</label>
+              <select class="input" name="personas" id="personas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class="form-group fechahora">
+              <label for="date">Fecha</label>
+              <input type="date" name="date" id="date" />
+              <label for="hour">Hora</label>
+              <select name="hour" id="hour">
+                <option value="manana" disabled>Mañana</option>
+                <option value="13:00">13:00</option>
+                <option value="13:15">13:15</option>
+                <option value="13:30">13:30</option>
+                <option value="13:45">13:45</option>
+                <option value="14:00">14:00</option>
+                <option value="14:15">14:15</option>
+                <option value="14:30">14:30</option>
+                <option value="14:45">14:45</option>
+                <option value="15:00">15:00</option>
+                <option value="15:15">15:15</option>
+                <option value="15:30">15:30</option>
+                <option value="tarde" disabled>Tarde</option>
+                <option value="20:00">20:00</option>
+                <option value="20:15">20:15</option>
+                <option value="20:30">20:30</option>
+                <option value="20:45">20:45</option>
+                <option value="21:00">21:00</option>
+                <option value="21:15">21:15</option>
+                <option value="21:30">21:30</option>
+                <option value="21:45">21:45</option>
+                <option value="22:00">22:00</option>
+                <option value="22:15">22:15</option>
+                <option value="22:30">22:30</option>
+                <option value="22:45">22:45</option>
+                <option value="23:00">23:00</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comments">Comentarios</label><br />
+              <textarea name="comments" id="comments" rows="4"></textarea>
+            </div>
+            <input type="submit" value="RESERVAR" />
+          </form>
+        </div>
+        <div class="boxContactInfo">
+          <div class="contactinfo">
+            <div class="phoneinfo"><i class="fas fa-phone"></i>681 26 52 96</div>
+            <div class="emailinfo"><i class="fas fa-envelope"></i>reservas@piscinasvillaverde.com</div>
+          </div>
         </div>
       </div>
     </main>
+
 
     <script
       src="https://kit.fontawesome.com/790908a15c.js"
