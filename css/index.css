@@ -188,6 +188,12 @@ main .bar .bar-buttons a span,
   font-weight: 800;
   color: var(--dark-gray);
 }
+main .bar .alerg,
+main .bar .alerg:visited {
+  color: var(--break-white);
+  text-align: center;
+  text-decoration: underline;
+}
 
 /* MAP & CONTACT */
 main .map_contact hr {
@@ -197,9 +203,8 @@ main .map_contact hr {
 main .map_contact {
   background-color: var(--pastel-darkgreen);
   height: 100vh;
+  max-width: 100vw;
   max-height: 100vh;
-}
-main .map_contact {
   padding: 0.5em 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -211,7 +216,8 @@ main .map_contact {
 /* --- MAP BOX --- */
 main .map_contact .boxMap {
   grid-area: boxMap;
-  background-color: aqua;
+  width: 100%;
+  height: 100%;
 }
 /* --- SOCIAL BOX --- */
 main .map_contact .boxSocialInfo {
@@ -221,7 +227,7 @@ main .map_contact .boxSocialInfo {
 }
 main .map_contact .boxSocialInfo h4 {
   color: var(--break-white);
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
   font-size: 1.25em;
   font-weight: 1000;
@@ -234,9 +240,10 @@ main .map_contact .boxSocialInfo .social_list {
   justify-content: center;
 }
 main .map_contact .boxSocialInfo .social {
+  color: var(--break-white);
   font-size: 3em;
   margin-right: 1em;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 main .map_contact .boxSocialInfo .social:hover {
   font-size: 3.25em;
@@ -315,7 +322,7 @@ main .map_contact .boxContact [type="submit"] {
 /* --- CONTACT INFO BOX --- */
 main .map_contact .boxContactInfo {
   color: var(--break-white);
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 2em;
   grid-area: boxContactInfo;
   background-color: var(--pastel-green);
@@ -328,3 +335,60 @@ main .map_contact .boxContactInfo .contactinfo i {
   margin: 0 1em 0.15em 0;
 }
 
+/*  RESPONSIVE
+   ========================================================================= 
+ Escritorios muy grandes
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+}
+/* Tablets en horizonal y escritorios normales
+        ------------------------------------------------------------------------- */
+@media (min-width: 900px) and (max-width: 1199px) {
+}
+/* Móviles en horizontal o tablets en vertical
+        ------------------------------------------------------------------------- */
+@media (max-width: 899px) {
+  @media only screen and (max-width: 900px) {
+    main .instalaciones {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.1fr 1fr 1fr 0.3fr;
+      grid-template-areas:
+        "boxInstal2"
+        "boxInstal1"
+        "boxInstal4"
+        "boxInstal3";
+    }
+    main .instalaciones .boxInstal1 > .splide {
+      width: 100vw;
+    }
+    main .map_contact {
+      grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "boxContact"
+        "boxMap"
+        "boxContactInfo"
+        "boxSocialInfo";
+      width: 100%;
+    }
+    main .map_contact .boxMap {
+      width: 100vw;
+      height: 300px;
+    }
+    main .map_contact .boxContactInfo {
+      width: 100vw;
+      font-size: 1em;
+    }
+    main .map_contact .boxSocialInfo {
+      width: 100vw;
+      font-size: 0.6em;
+    }
+    main .map_contact .boxContact {
+      width: 100vw;
+    }
+  }
+}
+/* Móviles en vertical
+        ------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+}

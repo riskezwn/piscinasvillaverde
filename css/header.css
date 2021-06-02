@@ -33,12 +33,16 @@
     margin: 0 auto;
   }
   .logo {
+    font-family: "Quicksand", sans-serif;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
     display: inline-block;
     font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
+  }
+  .logo img {
+    height: .75em;
   }
   .navbar-toggle {
     position: absolute;
