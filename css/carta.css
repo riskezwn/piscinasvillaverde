@@ -7,6 +7,7 @@
   --pastel-darkgreen: #357951;
   --break-white: #ebebeb;
   --pastel-blue: #5c6bc0;
+  --pastel-darkblue: #404a81;
 }
 
 * {
@@ -29,34 +30,55 @@ body {
 
 /* --- --- CATEGORIA --- --- */
 main {
-  margin: 4em auto;
+  margin: 4em auto 30px auto;
   width: 90%;
 }
+main .backbutton {
+  font-family: FontAwesome, "Quicksand", sans-serif;
+  color: var(--break-white);
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: .5em;
+  display: block;
+  background-color: #363636;
+  border-radius: 10px;
+}
+main .backbutton:hover {
+  background-color: var(--pastel-darkblue);
+}
+main .combinados:last-child {
+  margin-bottom: 2em;
+}
 main .categoria {
+  cursor: pointer;
   z-index: 2;
   display: flex;
   background-color: var(--pastel-green);
   margin: 10px 0 10px 0;
   height: 2.5em;
   border-radius: 10px;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 .categoria.active, .categoria:hover {
   background-color: var(--pastel-darkgreen); 
 }
 main .categoria img {
-  width: auto;
-  height: 100%;
+  
+  height: 50%;
   padding: 0 20px;
+  
 }
 main .categoria h2 {
-  display: flex;
   font-family: "Quicksand", sans-serif;
   color: var(--break-white);
   font-weight: 900;
   text-transform: uppercase;
   margin: 0 0 0 auto;
   padding: 0 10px 0 20px;
-  align-items: center;
 }
 main .categoria h2::after {
   margin-left: .5em;
@@ -72,6 +94,23 @@ main .categoria.active h2::after {
 main .block {
   display: none;
 }
+main .block > p:not(.enbarra) {
+  margin: 1em;
+  text-align: center;
+  font-style: italic;
+  color: #363636;
+}
+main .enbarra {
+  text-align: center;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  color: var(--break-white);
+  background-color: var(--pastel-blue);
+  display: flex;
+  justify-content: space-between;
+}
 
 main .element {
   display: flex;
@@ -83,10 +122,23 @@ main .element {
 main .element .txt {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 main .element .txt h3 {
   font-size: 1.3em;
   text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+main .element .txt h3 span{
+  margin-left: 3px;
+  font-size: 0.4em;
+  padding: .5em 1em;
+  border-radius: 10px;
+  background-color: #ce3e3e;
+  color: var(--break-white);
+  font-weight: bold;
 }
 main .element .txt p {
   font-family: sans-serif;
@@ -98,8 +150,13 @@ main .element .precio {
   margin: 0 0 0 auto;
   align-items: center;
   padding: 0 10px;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* -- FOOTER -- */
+footer {
+  background-color: var(--break-white);
+  color: var(--break-white);
 }
 
 /*  RESPONSIVE
