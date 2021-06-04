@@ -239,13 +239,13 @@ main .map_contact .boxSocialInfo .social_list {
   flex-flow: row wrap;
   justify-content: center;
 }
-main .map_contact .boxSocialInfo .social {
+main .map_contact .boxSocialInfo .social a {
   color: var(--break-white);
   font-size: 3em;
   margin-right: 1em;
   transition: all 0.3s ease;
 }
-main .map_contact .boxSocialInfo .social:hover {
+main .map_contact .boxSocialInfo .social a:hover {
   font-size: 3.25em;
 }
 /* --- CONTACT BOX --- */
@@ -362,10 +362,10 @@ main .map_contact .boxContactInfo .contactinfo i {
       width: 100vw;
     }
     main .map_contact {
-      grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr;
+      grid-template-columns: 3fr 0.5fr 0.5fr;
       grid-template-rows: repeat(4, 1fr);
       grid-template-areas:
-        "boxContact"
+        /* "boxContact" */
         "boxMap"
         "boxContactInfo"
         "boxSocialInfo";
