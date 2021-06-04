@@ -63,16 +63,31 @@ main .categoria {
   align-items: center;
   justify-content: flex-end;
 }
+main .categoriablue {
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  margin: 10px 0 10px 0;
+  height: 2.5em;
+  border-radius: 10px;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--pastel-blue);
+}
 .categoria.active, .categoria:hover {
   background-color: var(--pastel-darkgreen); 
 }
-main .categoria img {
+.categoriablue.active, .categoriablue:hover {
+  background-color: var(--pastel-darkblue); 
+}
+main .categoria img, main .categoriablue img {
   
   height: 50%;
   padding: 0 20px;
   
 }
-main .categoria h2 {
+main .categoria h2, main .categoriablue h2 {
   font-family: "Quicksand", sans-serif;
   color: var(--break-white);
   font-weight: 900;
@@ -83,11 +98,11 @@ main .categoria h2 {
   margin: 0 0 0 auto;
   padding: 0 10px 0 20px;
 }
-main .categoria h2::after {
+main .categoria h2::after, main .categoriablue h2::after {
   margin-left: .5em;
   content: "+";
 }
-main .categoria.active h2::after {
+main .categoria.active h2::after, main .categoriablue.active h2::after {
   margin-left: .5em;
   content: "-";
 }
@@ -154,6 +169,10 @@ main .element .precio {
   align-items: center;
   padding: 0 10px;
   font-size: 1.25em;
+}
+main .image-helados {
+  width: 100%;
+  text-align: center;
 }
 
 /* -- FOOTER -- */
