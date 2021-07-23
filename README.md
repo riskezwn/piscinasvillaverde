@@ -18,7 +18,7 @@ The website is fully responsive since it is very designed to be used from mobile
 
 - [Splide](https://github.com/Splidejs/splide)
 Splide is a lightweight, powerful and flexible slider and carousel, written in pure JavaScript without any dependencies.
-- [ScrollReveal(https://github.com/jlmakes/scrollreveal)
+- [ScrollReveal](https://github.com/jlmakes/scrollreveal)
 JavaScript library to animate elements as they scroll into view.
 
 ## Screenshots
