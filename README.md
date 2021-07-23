@@ -4,7 +4,7 @@ View website: [Piscinas Villaverde](https://piscinasvillaverde.com)
 
 ## Description
 
-Website created for a public swimming pool company. It is a static web page, with contact information, images about the facilities, etc ...
+Website created for a public swimming pool company. It is a static web page with some smooth animations, containing contact information, images about the facilities, etc ...
 In addition, for the pool bar, it has a digital menu section so that customers can access through a QR code.
 The website is fully responsive since it is very designed to be used from mobile devices.
 
